@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	/*var arr=[1,2,3,4,5];
+	vr(arr,'a',5,'好');
+		function vr(arr){
+			for(i=1;i<arguments.length;i++){
+				arr[arr.length]=arguments[i];
+			}	
+			console.log(arr);	
+		}*/
+		// 任意数组从大到小或从小到大的一个排序
+		/*var arr = [2,5,9,5,7,4,10];
+		sort(arr,"<")
+		function sort(arr,type){
+			type=type==undefined?'>':type;
+			if(type=="<"){
+				sortup(arr);
+			}else if(type==">"){
+				sortdown(arr);
+			}	
+		}
+		function sortup(arr){
+		for(var i=0;i<arr.length;i++){
+			for(var j=i+1;j<arr.length;j++){
+				if(arr[i]<arr[j]){
+					var a =arr[i];
+					arr[i]=arr[j];
+					arr[j]=a;
+				}
+			}
+		}
+		console.log(arr);
+		}
+		function sortdown(arr){
+		for(var i=0;i<arr.length;i++){
+			for(var j=i+1;j<arr.length;j++){
+				if(arr[i]>arr[j]){
+					var a =arr[i];
+					arr[i]=arr[j];
+					arr[j]=a;
+				}
+			}
+		}
+		console.log(arr);
+		}*/
+
+		// 数组中的元素连接
+		// var arr=[1,2,3,4,8,9];
+		// lianjie(arr,"+");
+		// function lianjie(arr,str){ 
+		// 	if(!(typeof arr == 'object' && arguments.length>1)){
+		// 		return "输入错误";
+ 	// 		}						/*判断所给的arr是不是一个对象 && str的长度是不是大于1*/
+		// 	str = str ==undefined? '-':str;		/*给str一个默认值*/
+		// 	var num ='';					/*声明一个空字符串*/
+		// 	for(var i=0;i<arr.length;i++){
+		// 		if(i<arr.length-1){
+				
+		// 		num += arr[i]+str;
+		// 	}else{
+		// 		num += arr[i];
+		// 	}
+		// 	}
+			
+		// 	console.log(num);
+		// 	return num;
+		// }
+		// 数组中的偶数提取
+		/*var arr = [1,2,3,4,5,6,7];
+		oushu(arr)
+		function oushu(arr){
+			var newarr=[]
+			for(i=0;i<arr.length;i++){
+				if(arr[i]%2 == 0){
+					newarr[newarr.length]=arr[i]
+				}
+			}
+			console.log(newarr);
+			return newarr;
+		}*/
+		// 映射
+		var arr=[1,2,3,4,5,6];
+		var result=map(arr,function(value){
+			result=value*2;
+			return result;
+		})
+		console.log(result)
+		function map(arr,fn){
+			var newarr=[];
+			for(var i=0;i<arr.length;i++){
+				newarr[newarr.length]=fn(arr[i]);
+			}
+			return newarr;
+		}
+	</script>
+</body>
+</html>

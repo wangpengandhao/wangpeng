@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 最大值
+		/*var arr = [2,5,8,10,50,60];
+		var max = arr[0];
+		for(var i = 0;i < arr.length;i++){
+			if(max < arr[i]){
+				max = arr[i];
+			}
+		}
+		console.log(max);*/
+
+		// 最小值
+		/*var arr = [2,5,9,5,7,4,10];
+		var min = arr[0];
+		for(i = 0;i<arr.length;i++){
+			if(min>arr[i]){
+				min=arr[i];
+			}
+		}
+		console.log(min);*/
+
+		// 从大到小的排序
+		/*var arr = [2,5,9,5,7,4,10];
+		for(var i=0;i<arr.length;i++){
+			for(var j=i+1;j<arr.length;j++){
+				if(arr[i]<arr[j]){
+					var a =arr[i];
+					arr[i]=arr[j];
+					arr[j]=a;
+				}
+			}
+		}
+		console.log(arr);
+		*/
+
+		// 二维数组的嵌套求最大值
+		/*var d = [[1,2,3],[4,5,6],[7,8,9]];
+		var max = 0;
+		for(var i=0;i<d.length;i++){
+			for(var j=0;j<d[i].length;j++){
+				if(max<d[i][j]){
+					max=d[i][j];
+				}
+			}
+		}
+		console.log(max);*/
+
+		// 去空		1、是否为空	2、创建一个新数组	3、新数组的length
+		var arr = [1,2,3,4,,5,6,,7,8,9];
+		var arr1 = [];
+		for(i=0;i<=arr.length-1;i++){
+			/*if(arr[i]==undefined){
+				continue;
+			}else*/
+			if((typeof arr[i]) != 'undefined'){
+				arr1[arr1.length]=arr[i];
+			
+			}
+		}
+		console.log(arr1);
+		/*var arr = [1,2,3,4,,5,6,,7,8,9];
+		var arr1 = [];
+		for(var i=0;i<arr.length;i++){
+
+		}*/
+	</script>
+</body>
+</html>
